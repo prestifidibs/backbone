@@ -1,6 +1,6 @@
 {
-  "name": "backbone",
-  "version": "1.2.0",
+  "name": "blodash",
+  "version": "1.0.0",
   "main": "backbone.js",
   "dependencies": {
     "lodash": "~3.9.0"
