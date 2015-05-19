@@ -27,7 +27,7 @@
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-1">&#182;</a>
               </div>
-              <pre><code>Backbone.js <span class="hljs-number">1.2</span><span class="hljs-number">.0</span>
+              <pre><code>Backbone.js <span class="hljs-number">1.2</span>.0
 </code></pre>
             </div>
             
@@ -81,7 +81,7 @@ We use <code>self</code> instead of <code>window</code> for <code>WebWorker</cod
             </div>
             
             <div class="content"><div class='highlight'><pre>  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> define === <span class="hljs-string">'function'</span> &amp;&amp; define.amd) {
-    define([<span class="hljs-string">'underscore'</span>, <span class="hljs-string">'jquery'</span>, <span class="hljs-string">'exports'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(_, $, exports)</span> </span>{</pre></div></div>
+    define([<span class="hljs-string">'lodash'</span>, <span class="hljs-string">'jquery'</span>, <span class="hljs-string">'exports'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(_, $, exports)</span> </span>{</pre></div></div>
             
         </li>
         
@@ -114,7 +114,7 @@ others that may still expect a global Backbone.</p>
             </div>
             
             <div class="content"><div class='highlight'><pre>  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> exports !== <span class="hljs-string">'undefined'</span>) {
-    <span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'underscore'</span>), $;
+    <span class="hljs-keyword">var</span> _ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'lodash'</span>), $;
     <span class="hljs-keyword">try</span> { $ = <span class="hljs-built_in">require</span>(<span class="hljs-string">'jquery'</span>); } <span class="hljs-keyword">catch</span>(e) {}
     factory(root, exports, _, $);</pre></div></div>
             
@@ -2900,7 +2900,7 @@ right here:</p>
             <div class="content"><div class='highlight'><pre>  <span class="hljs-keyword">var</span> collectionMethods = { forEach: <span class="hljs-number">3</span>, each: <span class="hljs-number">3</span>, map: <span class="hljs-number">3</span>, collect: <span class="hljs-number">3</span>, reduce: <span class="hljs-number">4</span>,
       foldl: <span class="hljs-number">4</span>, inject: <span class="hljs-number">4</span>, reduceRight: <span class="hljs-number">4</span>, foldr: <span class="hljs-number">4</span>, find: <span class="hljs-number">3</span>, detect: <span class="hljs-number">3</span>, filter: <span class="hljs-number">3</span>,
       select: <span class="hljs-number">3</span>, reject: <span class="hljs-number">3</span>, every: <span class="hljs-number">3</span>, all: <span class="hljs-number">3</span>, some: <span class="hljs-number">3</span>, any: <span class="hljs-number">3</span>, include: <span class="hljs-number">2</span>,
-      contains: <span class="hljs-number">2</span>, invoke: <span class="hljs-number">2</span>, max: <span class="hljs-number">3</span>, min: <span class="hljs-number">3</span>, toArray: <span class="hljs-number">1</span>, size: <span class="hljs-number">1</span>, first: <span class="hljs-number">3</span>,
+      contains: <span class="hljs-number">2</span>, invoke: <span class="hljs-number">0</span>, max: <span class="hljs-number">3</span>, min: <span class="hljs-number">3</span>, toArray: <span class="hljs-number">1</span>, size: <span class="hljs-number">1</span>, first: <span class="hljs-number">3</span>,
       head: <span class="hljs-number">3</span>, take: <span class="hljs-number">3</span>, initial: <span class="hljs-number">3</span>, rest: <span class="hljs-number">3</span>, tail: <span class="hljs-number">3</span>, drop: <span class="hljs-number">3</span>, last: <span class="hljs-number">3</span>,
       without: <span class="hljs-number">0</span>, difference: <span class="hljs-number">0</span>, indexOf: <span class="hljs-number">3</span>, shuffle: <span class="hljs-number">1</span>, lastIndexOf: <span class="hljs-number">3</span>,
       isEmpty: <span class="hljs-number">1</span>, chain: <span class="hljs-number">1</span>, sample: <span class="hljs-number">3</span>, partition: <span class="hljs-number">3</span> };</pre></div></div>

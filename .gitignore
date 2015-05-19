@@ -1,4 +1,7 @@
 raw
+build
+components
+npm-debug.log
 *.sw?
 .DS_Store
 node_modules
